@@ -53,6 +53,13 @@ namespace MergeSort
 
     public static class Util
     {
+        /// <summary>
+        /// Time Complexity O(nlogn)
+        /// Space Complexity O(nlogn)
+        /// </summary>
+        /// <param name="arr"></param>
+        /// <param name="l"></param>
+        /// <param name="r"></param>
         public static void mergeSort(ref int[] arr, int l, int r)
         {
             if (r > l)
