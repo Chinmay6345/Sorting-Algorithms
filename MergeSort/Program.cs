@@ -69,6 +69,15 @@ namespace MergeSort
                 merge(ref arr, l, m, r);
             }
         }
+
+
+        /// <summary>
+        /// Time Complexity O((m+n)logn)
+        /// Space Complexity O((m+n)logn)
+        /// </summary>
+        /// <param name="arr"></param>
+        /// <param name="l"></param>
+        /// <param name="r"></param>
         public static void merge(ref int[] arr, int l, int m, int h)
         {
 
