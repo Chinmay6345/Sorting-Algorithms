@@ -8,12 +8,12 @@ namespace Quick_Sort
         {
             if (low < high)
             {
-                Int32 p = Partition(ref arr, low, high);
+                Int32 p = LPartition(ref arr, low, high);
                 QSort(ref arr, low, p - 1);
                 QSort(ref arr, p + 1, high);
             }
         }
-        public static Int32 Partition(ref Int32[] arr, Int32 low, Int32 high)
+        public static Int32 LPartition(ref Int32[] arr, Int32 low, Int32 high)
         {
             Int32 i = low - 1;
             Int32 pivot = arr[high];
@@ -28,6 +28,12 @@ namespace Quick_Sort
             Swap(ref arr, i + 1, high);
             return i + 1;
         }
+
+        public static Int32 HPartition(ref Int32 [],Int32 low,Int32 high)
+        {
+            return -1;
+        } 
+
         public static void Swap(ref Int32[] arr, Int32 i, Int32 j)
         {
             Int32 temp = arr[i];
