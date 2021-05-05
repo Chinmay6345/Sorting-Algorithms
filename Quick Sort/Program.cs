@@ -4,15 +4,26 @@ namespace Quick_Sort
 {
     public static class AppHelper
     {
-        public static void QSort(ref Int32[] arr, Int32 low, Int32 high)
+        public static void QSort_Lomuto(ref Int32[] arr, Int32 low, Int32 high)
         {
             if (low < high)
             {
                 Int32 p = HPartition(ref arr, low, high);
-                QSort(ref arr, low, p);
-                QSort(ref arr, p + 1, high);
+                QSort_Lomuto(ref arr, low, p-1);
+                QSort_Lomuto(ref arr, p + 1, high);
             }
         }
+
+        public static void QSort_Hoare(ref Int32[] arr, Int32 low, Int32 high)
+        {
+            if (low < high)
+            {
+                Int32 p = HPartition(ref arr, low, high);
+                QSort_Hoare(ref arr, low, p);
+                QSort_Hoare(ref arr, p + 1, high);
+            }
+        }
+
         public static Int32 LPartition(ref Int32[] arr, Int32 low, Int32 high)
         {
             Int32 i = low - 1;
@@ -56,7 +67,7 @@ namespace Quick_Sort
         static void Main(string[] args)
         {
             Int32[] arr = { 2, 0, 1, 9, 4, 8 };
-            AppHelper.QSort(ref arr, 0, arr.Length-1);
+            AppHelper.QSort_Hoare(ref arr, 0, arr.Length-1);
             Console.WriteLine(String.Join(" ", arr.Select(g => g)));
             Console.ReadLine();
         }
