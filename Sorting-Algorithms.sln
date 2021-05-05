@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MergeSort", "MergeSort\Merg
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quick Sort", "Quick Sort\Quick Sort.csproj", "{0C5313E6-5271-4AD5-B927-76FDF0498BEF}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Problems", "Problems", "{0FF4440A-288F-48A6-8A3A-D3BD3CFF2670}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chocolate distribution problem", "Chocolate distribution problem\Chocolate distribution problem.csproj", "{EEF9339B-F1D7-4FF8-8810-B077791FCA1F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,9 +31,16 @@ Global
 		{0C5313E6-5271-4AD5-B927-76FDF0498BEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0C5313E6-5271-4AD5-B927-76FDF0498BEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0C5313E6-5271-4AD5-B927-76FDF0498BEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEF9339B-F1D7-4FF8-8810-B077791FCA1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEF9339B-F1D7-4FF8-8810-B077791FCA1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEF9339B-F1D7-4FF8-8810-B077791FCA1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEF9339B-F1D7-4FF8-8810-B077791FCA1F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EEF9339B-F1D7-4FF8-8810-B077791FCA1F} = {0FF4440A-288F-48A6-8A3A-D3BD3CFF2670}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {938D31E9-AA29-483A-8E2D-BA2A27B15E28}
