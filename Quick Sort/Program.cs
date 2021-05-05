@@ -1,5 +1,5 @@
 ﻿using System;
-
+using System.Linq;
 namespace Quick_Sort
 {
     public static class AppHelper
@@ -8,8 +8,8 @@ namespace Quick_Sort
         {
             if (low < high)
             {
-                Int32 p = LPartition(ref arr, low, high);
-                QSort(ref arr, low, p - 1);
+                Int32 p = HPartition(ref arr, low, high);
+                QSort(ref arr, low, p);
                 QSort(ref arr, p + 1, high);
             }
         }
@@ -29,9 +29,19 @@ namespace Quick_Sort
             return i + 1;
         }
 
-        public static Int32 HPartition(ref Int32 [],Int32 low,Int32 high)
+        public static Int32 HPartition(ref Int32 [] arr,Int32 low,Int32 high)
         {
-            return -1;
+            Int32 pivot = arr[low];
+            Int32 i = low - 1;
+            Int32 j = high + 1;
+            while(true)
+            {
+                do { i++; } while (arr[i] < pivot);
+                do { j--; } while (arr[j] > pivot);
+                if (i >= j)
+                    return j;
+                Swap(ref arr, i, j);
+            }
         } 
 
         public static void Swap(ref Int32[] arr, Int32 i, Int32 j)
@@ -45,6 +55,10 @@ namespace Quick_Sort
     {
         static void Main(string[] args)
         {
+            Int32[] arr = { 2, 0, 1, 9, 4, 8 };
+            AppHelper.QSort(ref arr, 0, arr.Length-1);
+            Console.WriteLine(String.Join(" ", arr.Select(g => g)));
+            Console.ReadLine();
         }
     }
 }
