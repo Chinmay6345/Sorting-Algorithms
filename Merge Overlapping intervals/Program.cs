@@ -32,7 +32,8 @@ namespace Merge_Overlapping_intervals
             int res = 0;
 
             for (int i = 1; i < n; i++)
-            {
+            { 
+                  //mj >=si
                 if (arr[res].e >= arr[i].s)
                 {
                     arr[res].e = Math.Max(arr[res].e, arr[i].e);
