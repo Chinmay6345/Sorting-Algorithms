@@ -28,6 +28,7 @@ namespace Merge_Overlapping_intervals
         {
             Array.Sort(arr);
 
+            //elements 0-res are merged and non overlapping
             int res = 0;
 
             for (int i = 1; i < n; i++)
