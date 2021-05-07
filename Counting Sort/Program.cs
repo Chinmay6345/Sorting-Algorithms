@@ -5,6 +5,12 @@ namespace Counting_Sort
 {
     public static class AppHelper
     {
+        /// <summary>
+        /// Time Complexity O(n+k)
+        /// Space Complexity O(n+k)
+        /// </summary>
+        /// <param name="arr"></param>
+        /// <returns></returns>
         public static Int32 [] CSort(Int32 [] arr)
         {
             Int32 n = arr.Length;
