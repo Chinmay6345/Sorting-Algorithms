@@ -8,7 +8,7 @@ namespace Quick_Sort
         {
             if (low < high)
             {
-                Int32 p = HPartition(ref arr, low, high);
+                Int32 p = LPartition(ref arr, low, high);
                 QSort_Lomuto(ref arr, low, p-1);
                 QSort_Lomuto(ref arr, p + 1, high);
             }
