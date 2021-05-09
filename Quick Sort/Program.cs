@@ -21,6 +21,13 @@ namespace Quick_Sort
             }
         }
 
+        /// <summary>
+        /// worst case TC O(n*n)
+        /// Best case TC O(nlogn)
+        /// </summary>
+        /// <param name="arr"></param>
+        /// <param name="low"></param>
+        /// <param name="high"></param>
         public static void QSort_Hoare(ref Int32[] arr, Int32 low, Int32 high)
         {
             if (low < high)
