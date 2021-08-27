@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Merge Overlapping intervals
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Counting Sort", "Counting Sort\Counting Sort.csproj", "{FDC98F96-9B7D-40C7-A778-3A664B9B8070}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Heap Sort", "Heap Sort\Heap Sort.csproj", "{CCAC9303-2115-4408-92A2-A45D0DBC43A1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +49,10 @@ Global
 		{FDC98F96-9B7D-40C7-A778-3A664B9B8070}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FDC98F96-9B7D-40C7-A778-3A664B9B8070}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FDC98F96-9B7D-40C7-A778-3A664B9B8070}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCAC9303-2115-4408-92A2-A45D0DBC43A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCAC9303-2115-4408-92A2-A45D0DBC43A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCAC9303-2115-4408-92A2-A45D0DBC43A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCAC9303-2115-4408-92A2-A45D0DBC43A1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
